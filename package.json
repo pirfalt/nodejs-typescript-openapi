@@ -1,0 +1,37 @@
+{
+  "name": "nodejs-typescript-openapi",
+  "version": "1.0.0",
+  "description": "https://trello.com/c/UbykGjK4/386-nodejs-typescript-openapi",
+  "main": "out/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./out/server.js",
+    "dev": "nodemon ./src/server.ts | pino-pretty",
+    "openapi": "openapi-typescript specification/petstore-openapi.yaml --output src/openapi-types.ts",
+    "generate-and-build": "npm run openapi && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirfalt/nodejs-typescript-openapi.git"
+  },
+  "author": "Emil Pirfält",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pirfalt/nodejs-typescript-openapi/issues"
+  },
+  "homepage": "https://github.com/pirfalt/nodejs-typescript-openapi#readme",
+  "devDependencies": {
+    "@types/uuid": "^8.3.3",
+    "nodemon": "^2.0.15",
+    "openapi-typescript": "^4.4.0",
+    "pino-pretty": "^7.2.0",
+    "ts-node": "^10.4.0"
+  },
+  "dependencies": {
+    "fastify": "^3.24.0",
+    "openapi-validator-middleware": "^3.2.4",
+    "typescript": "^4.5.2",
+    "uri-js": "^4.4.1"
+  }
+}
