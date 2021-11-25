@@ -2,8 +2,8 @@
 
 https://trello.com/c/UbykGjK4/386-nodejs-typescript-openapi
 
-[TypeScript "introduction"](./src/1_introduction.ts)
-[Presentation](./presentation.md)
+- [TypeScript "introduction"](./src/1_introduction.ts)
+- [Presentation](./presentation.md)
 
 ## Setup
 
